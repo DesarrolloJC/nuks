@@ -66,7 +66,7 @@ class services extends DBConnection
 
     public function getCategories($dep)
     { //getMenu(0);
-        $location_local = "plantilla/";
+        $location_local = "nukspvc/";
 
         switch ($_SERVER["HTTP_HOST"]) {
             case "localhost":
@@ -76,7 +76,7 @@ class services extends DBConnection
                 $URLBASE = "http://127.0.0.1/" . $location_local; //Desarrollo
                 break;
             case "artpromos.com.mx":
-                $URLBASE = "https://artpromos.com.mx/"; //Produccion
+                $URLBASE = "https://nukspvc.com/"; //Produccion
                 break;
         }
         $menu = '';

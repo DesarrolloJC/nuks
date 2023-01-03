@@ -18,7 +18,7 @@ class DBConnection
                 error_reporting(E_ERROR | E_PARSE);
 
                 $host = 'localhost';
-                $DB = 'articulos_promocionales';
+                $DB = 'nukspvc';
                 $user = 'root';
                 $pass = '';
                 $charset = 'utf8mb4';
@@ -29,7 +29,7 @@ class DBConnection
                     PDO::ATTR_EMULATE_PREPARES => false,
                 ];
                 break;
-            case 'artpromos.com.mx':
+            case 'nukspvc.com':
                 ini_set('max_execution_time', 0);
                 $host = 'localhost';
                 $DB = 'artpromo_articulos_promocionales';
